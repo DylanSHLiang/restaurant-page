@@ -1,10 +1,12 @@
 import { loadMenuTab } from './menu';
 import { loadContactTab } from './contact';
 
-const menu = document.querySelector('.menu');
-const contact = document.querySelector('.contact');
-
 export function loadHomeTab(main) {
+    const links = document.querySelectorAll('header li');
+    links[0].classList.add('active');
+    links[1].classList.remove('active');
+    links[2].classList.remove('active');
+
     main.innerHTML = '';
     let h1 = document.createElement('h1');
     h1.innerText = 'Oporto';

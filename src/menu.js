@@ -1,10 +1,12 @@
 import { loadHomeTab } from './home';
 import { loadContactTab } from './contact';
 
-const home = document.querySelector('.home');
-const contact = document.querySelector('.contact');
-
 export function loadMenuTab(main) {
+    const links = document.querySelectorAll('header li');
+    links[0].classList.remove('active');
+    links[1].classList.add('active');
+    links[2].classList.remove('active');
+
     main.innerHTML = '';
     let h1 = document.createElement('h1');
     h1.innerText = 'Menu';
