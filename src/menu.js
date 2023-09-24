@@ -1,6 +1,6 @@
-function loadMenuTab(main) {
+export function loadMenuTab(main) {
     let h1 = document.createElement('h1');
-    h1.innerText = 'Oporto';
+    h1.innerText = 'Menu';
     main.appendChild(h1);
 
     let div = document.createElement('div');

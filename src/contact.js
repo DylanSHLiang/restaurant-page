@@ -1,6 +1,6 @@
-function loadContactTab(main) {
+export function loadContactTab(main) {
     let h1 = document.createElement('h1');
-    h1.innerText = 'Oporto';
+    h1.innerText = 'Contact Us';
     main.appendChild(h1);
 
     let div = document.createElement('div');

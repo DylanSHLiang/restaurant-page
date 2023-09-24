@@ -1,6 +1,8 @@
 import './style.css';
 import Icon from './oporto.png';
 import { loadHomeTab } from './home';
+import { loadMenuTab } from './menu';
+import { loadContactTab } from './contact';
 
 const content = document.querySelector('#content');
 
@@ -25,8 +27,8 @@ function loadPage() {
     content.appendChild(header)
 
     const main = document.createElement('main');
-    content.appendChild(main);
     loadHomeTab(main);
+    content.appendChild(main);
 
     const footer = document.createElement('footer');
     ul = document.createElement('ul');
@@ -39,7 +41,6 @@ function loadPage() {
     li = document.createElement('li');
     li.innerText = 'This is a fake site - 2023';
     ul.appendChild(li);
-    nav.appendChild(ul);
     footer.appendChild(ul);
     content.appendChild(footer);
 }
