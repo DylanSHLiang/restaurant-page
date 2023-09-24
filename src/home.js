@@ -1,6 +1,3 @@
-import { loadMenuTab } from './menu';
-import { loadContactTab } from './contact';
-
 export function loadHomeTab(main) {
     const links = document.querySelectorAll('header li');
     links[0].classList.add('active');
