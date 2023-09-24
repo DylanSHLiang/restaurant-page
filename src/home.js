@@ -1,4 +1,11 @@
+import { loadMenuTab } from './menu';
+import { loadContactTab } from './contact';
+
+const menu = document.querySelector('.menu');
+const contact = document.querySelector('.contact');
+
 export function loadHomeTab(main) {
+    main.innerHTML = '';
     let h1 = document.createElement('h1');
     h1.innerText = 'Oporto';
     main.appendChild(h1);

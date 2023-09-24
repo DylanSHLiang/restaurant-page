@@ -1,4 +1,11 @@
+import { loadHomeTab } from './home';
+import { loadContactTab } from './contact';
+
+const home = document.querySelector('.home');
+const contact = document.querySelector('.contact');
+
 export function loadMenuTab(main) {
+    main.innerHTML = '';
     let h1 = document.createElement('h1');
     h1.innerText = 'Menu';
     main.appendChild(h1);

@@ -1,19 +1,19 @@
 import './style.css';
 import Icon from './oporto.png';
 import { loadHomeTab } from './home';
-import { loadMenuTab } from './menu';
-import { loadContactTab } from './contact';
 
 const content = document.querySelector('#content');
 
 function loadPage() {
+    const main = document.createElement('main');
+
     const header = document.createElement('header');
     const headerIcon = new Image();
     headerIcon.src = Icon;
     header.appendChild(headerIcon);
-    let nav = document.createElement('nav');
     let ul = document.createElement('ul');
     let li = document.createElement('li');
+    li.classList.add('active');
     li.innerText = 'Home';
     ul.appendChild(li);
     li = document.createElement('li');
@@ -22,21 +22,30 @@ function loadPage() {
     li = document.createElement('li');
     li.innerText = 'Contact';
     ul.appendChild(li);
-    nav.appendChild(ul);
-    header.appendChild(nav);
+    header.appendChild(ul);
     content.appendChild(header)
 
-    const main = document.createElement('main');
     loadHomeTab(main);
     content.appendChild(main);
 
     const footer = document.createElement('footer');
     ul = document.createElement('ul');
     li = document.createElement('li');
-    li.innerText = 'Images from https://www.oporto.com.au/';
+    li.innerText = 'Images from ';
+    let a = document.createElement('a');
+    a.setAttribute('href', 'https://www.oporto.com.au/');
+    a.setAttribute('target', '_blank');
+    a.innerText = 'Oporto';
+    li.appendChild(a);
     ul.appendChild(li);
     li = document.createElement('li');
-    li.innerText = 'Check out https://github.com/DylanSHLiang';
+    li.innerText = 'Check out my ';
+    a = document.createElement('a');
+    a.setAttribute('href', 'https://github.com/DylanSHLiang');
+    a.setAttribute('target', '_blank');
+    a.innerText = 'GitHub';
+    li.appendChild(a);
+    li.innerHTML += '!';
     ul.appendChild(li);
     li = document.createElement('li');
     li.innerText = 'This is a fake site - 2023';

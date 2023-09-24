@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+body {
+    box-sizing: border-box;
+}
+
 #content {
     font-family: sans-serif;
     display: flex;
@@ -58,7 +62,11 @@ table {
 
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 10px 0 0 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 
 header img {
@@ -68,16 +76,58 @@ header img {
 
 header ul, footer ul {
     display: flex;
+    justify-content: space-around;
+}
+
+header ul {
+    width: 40%;
+}
+
+header li:not(.active):hover {
+    cursor: pointer;
+}
+
+header li {
+    text-align: center;
+    width: 80px;
 }
 
 li {
     list-style-type: none;
-    margin: 0 20px;
+    padding: 20px;
+    background-color: rgb(19, 133, 161);
 }
 
 main {
+    width: clamp(400px, 80%, 1500px);
+    margin: 50px 0;
+    border-radius: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #e9e9e9;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    background-color: #efe;
+}
+
+footer ul {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
