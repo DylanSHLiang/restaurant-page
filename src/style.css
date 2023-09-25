@@ -95,16 +95,20 @@ header ul {
 
 header li:not(.active):hover {
     cursor: pointer;
+    background-color: #ffc300;
+    transition: background-color 0.3s;
 }
 
 header li.active {
-    background-color: #06a5a5;
+    background-color: #cd293d;
+    color: white;
+    transition: background-color 0.3s;
 }
 
 header li {
     text-align: center;
     width: 80px;
-    background-color: rgb(19, 133, 161);
+    font-size: 18px;
 }
 
 li {
@@ -120,31 +124,43 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e9e9e9;
+    background-color: white;
 }
 
 main > * {
     margin: 20px 0;
-    background-color: #fff;
+}
+
+.intro, .hours, .location {
+    background-color: #ffc300;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 5px solid #cd293d;
+    box-shadow: 5px 5px 5px black;
 }
 
 .intro {
-    width: 50%;
-    background-color: #fff;
+    width: clamp(200px, 40%, 500px);
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 36px;
     font-family: "RobotoBold", sans-serif;
 }
 
 h2 {
+    font-size: 24px;
     font-family: "RobotoBold", sans-serif;
+}
+
+.intro h2 {
+    float: right;
+    margin-top: 10px;
 }
 
 footer {
     width: 100%;
-    background-color: #fff;
+    background-color: white;
 }
 
 footer ul {

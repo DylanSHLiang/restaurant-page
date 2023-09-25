@@ -6,7 +6,7 @@ export function loadHomeTab(main) {
 
     main.innerHTML = '';
     let h1 = document.createElement('h1');
-    h1.innerText = 'Oporto';
+    h1.innerText = 'Live Spicy!';
     main.appendChild(h1);
 
     let div = document.createElement('div');
@@ -15,7 +15,7 @@ export function loadHomeTab(main) {
     p.innerText = "Beary's has the best porridge! The atmosphere and customer service make you feel like you are sitting in the middle of the woods, eating like a bear! This is exactly the kind of place that I like to return to again and again.";
     div.appendChild(p);
     let h2 = document.createElement('h2');
-    h2.innerText = 'Australian';
+    h2.innerText = '- Australian';
     div.appendChild(h2);
     main.appendChild(div);
 
