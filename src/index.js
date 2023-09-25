@@ -64,7 +64,7 @@ function loadPage() {
     li.innerHTML += '!';
     ul.appendChild(li);
     li = document.createElement('li');
-    li.innerText = 'This is a fake site - 2023';
+    li.innerText = 'This is a fake site - 2023©';
     ul.appendChild(li);
     footer.appendChild(ul);
     content.appendChild(footer);
