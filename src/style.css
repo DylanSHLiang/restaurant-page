@@ -66,7 +66,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #999999;
+    background: radial-gradient(#ffc300, #cd293d);
     width: 100vw;
 }
 
@@ -104,12 +104,12 @@ header li.active {
 header li {
     text-align: center;
     width: 80px;
+    background-color: rgb(19, 133, 161);
 }
 
 li {
     list-style-type: none;
     padding: 20px;
-    background-color: rgb(19, 133, 161);
 }
 
 main {
@@ -144,7 +144,7 @@ h2 {
 
 footer {
     width: 100%;
-    background-color: #efe;
+    background-color: #fff;
 }
 
 footer ul {
@@ -153,5 +153,9 @@ footer ul {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #cd293d;
+}
+
+a:hover {
+    color: #ffc300;
 }
