@@ -57,6 +57,11 @@ table {
     src: url(Roboto-Medium.ttf)
 }
 
+@font-face {
+    font-family: "Sacramento";
+    src: url(Sacramento-Regular.ttf)
+}
+
 body {
     box-sizing: border-box;
 }
@@ -128,7 +133,13 @@ main {
 }
 
 main > * {
-    margin: 20px 0;
+    margin: 40px 0;
+}
+
+#slogan {
+    font-family: 'Sacramento';
+    font-weight: bold;
+    font-size: 70px;
 }
 
 .intro, .hours, .location {
@@ -143,9 +154,11 @@ main > * {
     width: clamp(200px, 40%, 500px);
 }
 
-h1 {
+h1:not(#slogan) {
     font-size: 36px;
     font-family: "RobotoBold", sans-serif;
+    margin-top: 60px;
+    margin-bottom: 54px;
 }
 
 h2 {
@@ -156,6 +169,10 @@ h2 {
 .intro h2 {
     float: right;
     margin-top: 10px;
+}
+
+.location h2 {
+    margin-bottom: 10px;
 }
 
 footer {

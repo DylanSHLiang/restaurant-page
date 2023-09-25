@@ -6,13 +6,14 @@ export function loadHomeTab(main) {
 
     main.innerHTML = '';
     let h1 = document.createElement('h1');
-    h1.innerText = 'Live Spicy!';
+    h1.id = 'slogan';
+    h1.innerText = 'Live spicy';
     main.appendChild(h1);
 
     let div = document.createElement('div');
     div.classList.add('intro');
     let p = document.createElement('p');
-    p.innerText = "Beary's has the best porridge! The atmosphere and customer service make you feel like you are sitting in the middle of the woods, eating like a bear! This is exactly the kind of place that I like to return to again and again.";
+    p.innerText = "Oporto exceeded all my expectations. The food was exceptional, the service was top-notch, and the ambiance was inviting. I had a fantastic dining experience and will definitely be returning for more delicious moments at my new favourtite restaurant!";
     div.appendChild(p);
     let h2 = document.createElement('h2');
     h2.innerText = '- Australian';
